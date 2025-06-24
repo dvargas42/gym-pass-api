@@ -73,7 +73,7 @@ npm i @prisma/client
 Util para visualizar o banco de dados
 npx prisma studio
 
-Util para criar um novo migration
+Util para criar um novo migration baseada numa altera;'ao
 npx prisma migrate dev
 
 Util para rodar as migrations em produção ou dev
@@ -102,3 +102,8 @@ npm i vite -D
 Para realizar chamadas http do teste para nossa aplicacao sem precisar colocar nossa aplicacao no ar
 npm i supertest -D
 npm i @types/supertest -D
+
+escrever o refresh token nos cookies
+npm i @fastify/cookie
+
+ npx prisma migrate dev
