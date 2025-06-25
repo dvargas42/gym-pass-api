@@ -10,14 +10,8 @@ jobs:
     services:
       postgres:
         image: bitnami/postgresql:17
-        restart: unless-stopped
         ports:
           - 5432:5432
-        healthcheck:
-          test: pg_isready -U postgres
-          interval: 5s
-          retries: 6
-          start_period: 1s
         env:
           POSTGRESQL_PASSWORD: docker
           POSTGRESQL_USERNAME: docker
